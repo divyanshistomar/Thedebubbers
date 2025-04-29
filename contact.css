@@ -65,6 +65,11 @@
     flex-direction: column;
     font-weight: 300;
 }
+.container .ContactInfo .box .text h3 {
+    font-weight: 500;
+    color: #401f9a;
+}
+
 
 
 
