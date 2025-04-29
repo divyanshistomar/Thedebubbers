@@ -4,3 +4,53 @@
     margin: 0%;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #08080c;
+    font-family: 'Poppins' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header .menu_side, .song_side {
+    position: relative;
+    width: 25%;
+    height: 90%;
+    /* border: 1px solid #fff; */
+    background-color:#9489bd;
+    box-shadow: 5px 0px 2px #040508;
+    color: #faf7f8;
+}
+
+header .song_side {
+    width: 75%;
+    background:#201d21;
+}
+
+header .master_play {
+    width: 100%;
+    height: 10%;
+    background: #060605;
+    box-shadow: 0px 3px 8px #020610;
+}
+
+header .menu_side h1 {
+    font-size: 20px;
+    margin: 15px 0px 0px 20px;
+    font-weight: 500;
+}
+
+
+header .menu_side .playlist {
+    margin:  40px 0px 0px 20px;
