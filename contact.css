@@ -46,6 +46,19 @@
     padding: 20px 0;
     display: flex;
 }
+.container .ContactInfo .box .icon {
+    min-height: 40px;
+    width: 50px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+
 
 
 
