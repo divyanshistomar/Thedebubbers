@@ -15,4 +15,9 @@
     background: url(back5.jpeg);
     background-size: cover;
 }
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
 
