@@ -4,3 +4,11 @@ body {
     padding: 0;
     background:linear-gradient(#695E93,#C8B4D0)
 }
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    color:#281C2D;
+    
+}
