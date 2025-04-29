@@ -89,6 +89,15 @@
     outline: none;
     resize: none;
 }
+.ContactForm .inputBox input[type="submit"] {
+    width: 70px;
+    height: 40px;
+    background: #401f9a;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;   
+}
 
 
 
