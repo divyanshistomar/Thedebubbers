@@ -69,6 +69,17 @@
     font-weight: 500;
     color: #401f9a;
 }
+.ContactForm {
+    width: 25%;
+    padding: 40px;
+    background: white;
+}
+.ContactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
 
 
 
