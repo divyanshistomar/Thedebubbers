@@ -518,5 +518,5 @@ header .song_side .content .buttons{
      transition: .3s linear;
  }
  header .song_side .popular_song .pop_song li:hover{
-     background: rgb(105, 105, 170,.1);
+     background: rgba(45, 45, 73, 0.1);
  }
