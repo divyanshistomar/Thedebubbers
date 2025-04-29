@@ -305,7 +305,7 @@ header .master_play .bar .bar2{
      top: -10px;
      left: 0;
      cursor: pointer;
-     z-index: 99999999;
+     z-index: 999999;
      transition: 3s linear;
      opacity: 0;
   }
