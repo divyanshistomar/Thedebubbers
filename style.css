@@ -246,3 +246,66 @@ header .master_play .bar {
     background: rgba(189, 189, 202, 0.1);
     margin: 0px 15px 0px 10px;
 }
+header .master_play .bar .bar2{
+    position: absolute;
+    background: #1DB954;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear;
+ }
+ header .master_play .bar .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #1DB954;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+ }
+ header .master_play .bar .dot::before{
+     content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border:1px solid #1DB954;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+   box-shadow: inset 0px 0px 3px #1DB954;
+ }
+ header .master_play .bar input{
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: 3s linear;
+    opacity: 0;
+ }
+ header .master_play .vol{
+   position: relative;
+   width: 100px;
+   height: 2px;
+   margin-left: 50px;
+  background: rgb(105, 105, 170,.1); 
+ }
+ header .master_play .vol .bi{
+ position: absolute;
+ color: #fbf5f5;
+ font-size: 25px;
+ top: -17px;
+ left: -30px;
+ }
+ header .master_play .vol input{
+     position: absolute;
+     width: 100%;
+     top: -10px;
+     left: 0;
+     cursor: pointer;
+     z-index: 99999999;
+     transition: 3s linear;
+     opacity: 0;
+  }
