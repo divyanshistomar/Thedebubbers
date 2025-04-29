@@ -12,3 +12,23 @@ body {
     color:#281C2D;
     
 }
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    align-items:left
+     
+}
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#050A30;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.card a:hover {
+    background-color:#050A30;
+}
