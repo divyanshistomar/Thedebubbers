@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Profile</title>
+  
+  <!-- Google Fonts for Stylish Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif; /* Using Poppins for stylish font */
+      margin: 0;
+      padding: 0;
+      background: #121212; /* Dark background */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-container {
+      background: rgba(186, 59, 119, 0.6); /* Darker pink with transparency */
+      border: 1px solid rgba(255, 128, 225, 0.4); /* Light border */
+      backdrop-filter: blur(10px); /* Frosted glass effect */
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      width: 340px;
+    }
+
+    .profile-container h1 {
+      font-family: 'Roboto', sans-serif; /* More elegant font for title */
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #ffffff;
+      text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+      letter-spacing: 1px; /* Letter-spacing for elegance */
+      text-transform: uppercase; /* Uppercase for more style */
+    }
+
+    .profile-picture {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 20px auto;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info p {
+      font-family: 'Roboto', sans-serif; /* Roboto for clean body text */
+      font-size: 1.1rem;
+      margin: 6px 0;
+      color: #f0f0f0;
+      font-weight: 500; /* Medium weight for body text */
+      letter-spacing: 0.5px; /* Slight letter-spacing for readability */
+    }
+
+    .edit-btn {
+      background-color: #b3036f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      font-weight: 600; /* Bold for emphasis */
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .edit-btn:hover {
+      background-color: #f50057;
+      transform: scale(1.05);
+    }
+
+    .edit-link {
+      text-decoration: none;
+      color: #ff80e1;
+      font-size: 1rem;
+      display: inline-block;
+      margin-top: 12px;
+      transition: color 0.3s;
+      font-weight: 600; /* Make link bold */
+    }
+
+    .edit-link:hover {
+      color: #f50057;
+    }
+  </style>
+</head>
