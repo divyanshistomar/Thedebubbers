@@ -1,0 +1,14 @@
+body {
+    background-image:url("marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 200px;
+    margin-left: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
