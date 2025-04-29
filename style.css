@@ -393,3 +393,58 @@ header .master_play .bar .bar2{
    border-radius: 20px;
    color: rgb(22, 9, 9);
  }
+ header .song_side nav .search::before{
+    content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: rgba(255, 248, 248, 0.1);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+header .song_side nav .search .bi{
+   font-size: 13px;
+   padding: 3px 0px 0px 10px;
+}
+header .song_side nav .search input{
+   background: none;
+   outline: none;
+   border: none;
+   padding: 0px 10px;
+   color: #c7c6c6;
+   font-size: 12px;
+}
+header .song_side nav .user{
+   position: relative;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+header .song_side nav .user img{
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   box-shadow: 2px 2px 8px #131312;
+}
+
+header .song_side .content {
+    width:90%;
+    height: 30%;
+    margin: auto;
+    /* border: 1px solid #fff; */
+    padding-top: 20px;
+}
+
+header .song_side .content h1{
+   font-size: 25px;
+   font-weight: 600;
+}
+header .song_side .content p{
+   font-size: 11px;
+   font-weight: 400;
+   color: #4c5262;
+   margin: 5px;
+}
