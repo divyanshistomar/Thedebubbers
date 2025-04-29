@@ -41,6 +41,12 @@
     display: flex;
     flex-direction: column;   
 }
+.container .ContactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
 
 
 
