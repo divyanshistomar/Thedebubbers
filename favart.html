@@ -109,3 +109,45 @@
     }
   </style>
 </head>
+<body>
+
+  <h1>Who's Your Favorite Artist?</h1>
+
+  <!-- Stylish Button to open the Pop-up -->
+  <button onclick="showPopup()">Let Me Guess!</button>
+
+  <!-- The Pop-up Modal -->
+  <div id="popup" class="popup-modal">
+    <div class="popup-content">
+      <h2>Let Me Guess Your Favorite Singer</h2>
+      <p id="singer-name">Your favorite singer is...</p>
+
+      <!-- Close button for the pop-up -->
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // List of singers to randomly choose from
+    const singers = ['Ariana Grande', 'Taylor Swift', 'BTS', 'Billie Eilish', 'Ed Sheeran', 'Adele', 'Drake', 'Dua Lipa'];
+
+    // Show the Pop-up Modal
+    function showPopup() {
+      // Randomly select a singer
+      const randomSinger = singers[Math.floor(Math.random() * singers.length)];
+
+      // Display the randomly chosen singer
+      document.getElementById('singer-name').innerText = `Your favorite singer is... ${randomSinger}!`;
+
+      // Show the pop-up
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    // Close the Pop-up Modal
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
