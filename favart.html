@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Who's Your Favorite Artist?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #2c0b41; /* Dark pinkish purple */
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff80e1; /* Light pinkish color */
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    /* The Pop-up modal */
+    .popup-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .popup-content {
+      background: #9c2a66; /* Dark pinkish purple */
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(128, 0, 128, 0.4);
+      text-align: center;
+      color: #fff;
+    }
+
+    .popup-content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .popup-content p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .popup-content button {
+      background-color: #ff80e1; /* Light pink */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .popup-content button:hover {
+      background-color: #ff4d94; /* Darker pink on hover */
+    }
+
+    /* Stylish "Let Me Guess!" Button */
+    button {
+      background: linear-gradient(to right, #ff80e1, #ff4d94); /* Gradient */
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border-radius: 50px;
+      color: white;
+      box-shadow: 0 8px 15px rgba(255, 105, 180, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #ff4d94, #ff80e1); /* Inverted gradient on hover */
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.6);
+    }
+
+    /* Close Button Style */
+    .close-btn {
+      background-color: #ff4d94; /* Darker pink */
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .close-btn:hover {
+      background-color: #ff1e6e; /* More intense pink */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Who's Your Favorite Artist?</h1>
+
+  <!-- Stylish Button to open the Pop-up -->
+  <button onclick="showPopup()">Let Me Guess!</button>
+
+  <!-- The Pop-up Modal -->
+  <div id="popup" class="popup-modal">
+    <div class="popup-content">
+      <h2>Let Me Guess Your Favorite Singer</h2>
+      <p id="singer-name">Your favorite singer is...</p>
+
+      <!-- Close button for the pop-up -->
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // List of singers to randomly choose from
+    const singers = ['Ariana Grande', 'Taylor Swift', 'BTS', 'Billie Eilish', 'Ed Sheeran', 'Adele', 'Drake', 'Dua Lipa'];
+
+    // Show the Pop-up Modal
+    function showPopup() {
+      // Randomly select a singer
+      const randomSinger = singers[Math.floor(Math.random() * singers.length)];
+
+      // Display the randomly chosen singer
+      document.getElementById('singer-name').innerText = `Your favorite singer is... ${randomSinger}!`;
+
+      // Show the pop-up
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    // Close the Pop-up Modal
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
