@@ -6,7 +6,7 @@
 }
 
 body {
-    width: 100%;
+    width: 200%;
     height: 100vh;
     background-color: #08080c;
     font-family: 'Poppins' , sans-serif;
@@ -130,7 +130,7 @@ header .menu_side .menu_song li img{
     margin-left: 25px;
 }
 header .menu_side .menu_song li h5{
-    font-size: 11px;
+    font-size: 15px;
     margin-left: 15px;
 }
 header .menu_side .menu_song li h5 .subtitle{
