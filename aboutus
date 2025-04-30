@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - MusicPlayer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #3f51b5; }
+    .container { max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About Us</h1>
+    <p>Welcome to MusicPlayer! Our goal is to create a simple and fun platform to listen to and explore music.</p>
+    <p>We are a team of music lovers and developers who built this project as a passion project for learning and sharing music joy.</p>
+  </div>
+</body>
+</html>
