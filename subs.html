@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Subscription</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #f5eaff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .heading {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      background: linear-gradient(270deg, #ff9dd3, #dab1ff, #ff9dd3);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glowText 6s ease infinite;
+      text-align: center;
+    }
+
+    @keyframes glowText {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .student-discount {
+      background: rgba(255, 182, 193, 0.15);
+      border: 1px solid #ffb6c1;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 600;
+      color: #ffccf5;
+      box-shadow: 0 0 10px rgba(255, 153, 255, 0.2);
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #1f1f1f, #262626);
+      border: 2px solid rgba(255, 192, 203, 0.3);
+      border-radius: 15px;
+      padding: 25px;
+      width: 280px;
+      color: #f5eaff;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(255, 182, 193, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      transform: scale(1.03);
+    }
+
+    .card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #fcd5ff;
+    }
+
+    .card p {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #eacaff;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #ffaad4;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background: #ff9dd3;
+      color: #1f1f1f;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #dab1ff;
+      color: #121212;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="heading">✨ Choose Your Subscription ✨</h1>
+
+  <div class="student-discount">
+    🎓 Special 50% Discount for Students! Just verify your ID.
+  </div>
+
+  <div class="plans">
+    <div class="card">
+      <h2>Basic Plan</h2>
+      <p>• 100 Songs/month</p>
+      <p>• Ad-supported</p>
+      <p class="price">₹99/month</p>
+      <button class="btn">Select</button>
+    </div>
+
+    <div class="card">
+      <h2>Premium Plan</h2>
+      <p>• Unlimited Songs</p>
+      <p>• Offline Download</p>
+      <p class="price">₹199/month</p>
+      <button class="btn">Select</button>
+    </div>
+
+    <div class="card">
+      <h2>Family Plan</h2>
+      <p>• Up to 6 users</p>
+      <p>• Parental Controls</p>
+      <p class="price">₹299/month</p>
+      <button class="btn">Select</button>
+    </div>
+  </div>
+
+</body>
+</html>
